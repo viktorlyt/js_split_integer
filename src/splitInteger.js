@@ -4,6 +4,8 @@
  *
  * @returns {number[]}
  */
+"use strict";
+
 function splitInteger(value, numberOfParts) {
   const parts = [];
   let rest = value;
@@ -15,7 +17,11 @@ function splitInteger(value, numberOfParts) {
     rest -= part;
   }
 
+  console.log(parts);
+
   return parts;
 }
+
+splitInteger(8, 16);
 
 module.exports = splitInteger;
